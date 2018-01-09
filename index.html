@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BremgartenTest</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section id="s1">
+        <div id="loadingDiv" class="loading">
+            <div class="loadingIcon"></div>
+            <div class="loadingText">
+                loading data
+            </div>
+        </div>
+        <div class="content">
+            <header>
+                <div class="title">Riverwave</div>
+                <div class="place">
+                    <a href="https://www.google.ch/maps/place/47%C2%B021'21.4%22N+8%C2%B020'26.2%22E/@47.3559444,8.3384224,748m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d47.3559444!4d8.3406111">47°21'21.4"N 8°20'26.2"E</a>
+                </div>
+            </header>
+            <div class="box">
+                <div class="box-pre">Drainage</div>
+                <div class="box-main" id="abfluss"></div>
+                <span class="box-last">m<sup>3</sup>/s</span>
+            </div>
+            <div class="box">
+                <div class="box-pre" id="datum"></div>
+                <div class="box-main" id="time"></div>
+            </div>
+            <!-- <div id="temperatur"></div> -->
+        </div>
+        <div class="sliderWrap">
+            <div id="sliderDiv">
+            </div>
+        </div>
+        <div class="waveWrapper" id="waveDiv">
+        </div>
+    </section>
+    <!--     <section id="s2">
+        <div>
+            hi
+        </div>
+    </section> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- load the d3.js library -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="d3Code.js"></script>
+</body>
+
+</html>

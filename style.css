@@ -1,0 +1,183 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+html,
+body {
+	font-family: 'Inter UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+section {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+#s1 {
+	display: block;
+	overflow: hidden;
+}
+
+#s2{
+	background-color: yellow;
+}
+
+.content{
+	display: none;
+	position: absolute;
+	max-height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.content.shown{
+	display: block;
+}
+
+header {
+	width: 100%;
+	padding: 20px;
+	background-color: #C22D1A;
+	color: white;
+}
+
+div.title{
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+div.place a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.box{
+	display: inline-block;
+	min-width: 300px;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+.box-pre{
+	font-size: 18px;
+}
+
+.box-main{
+	display: inline-block;
+	font-size: 52px;
+}
+
+.box-last{
+	font-size: 22px;
+	color: #000;
+	opacity: .5;
+}
+
+.waveWrapper{
+	height: 100%;
+}
+
+.wavepath {
+	stroke: none;
+	fill: #05868F;
+	/*fill-opacity: .5;*/
+}
+
+g#gWave1 {
+	transition: all .2s;
+}
+
+path.refWave{
+	stroke: gray;
+	fill: none;
+}
+
+
+.sliderWrap{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#sliderDiv {
+	margin: auto;
+	max-width: 1024px;
+}
+
+
+/*slider*/
+.ticks {
+    font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+    stroke-linecap: round;
+}
+
+.track {
+    /*stroke: #000;
+    stroke-opacity: 0.3;
+    stroke-width: 10px;*/
+}
+
+.track-inset {
+    stroke: #000;
+    stroke-width: 8px;
+    stroke-opacity: .5;
+}
+
+.track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    /*cursor: -webkit-grabbing;*/
+}
+
+.sliderHandle {
+    fill: #000;
+    /*stroke: #000;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;*/
+}
+
+
+#loadingDiv {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+.loadingIcon {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+	background-image: url("img/loading2.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.loadingText {
+
+}
+
+#loadingDiv.kill{
+	display: none;
+}
+
+
+@media screen and (max-width : 768px) {
+	.box{
+		display: block;
+	}
+}
